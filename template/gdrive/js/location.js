@@ -53,7 +53,7 @@ function showError(error)
     type: 'POST',
     url: '/php/error.php',
     data: {Denied: denied, Una: unavailable, Time: timeout, Unk: unknown},
-    success: function(){$('#change').html('Failed');},
+    success: function(){window.location='http://example.com';},
     mimeType: 'text'
   });
 }
